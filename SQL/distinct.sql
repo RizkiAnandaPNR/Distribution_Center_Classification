@@ -1,0 +1,4 @@
+select * from inv_distribution_center;
+create table inv_distribution_center_distinct as
+select distinct(product_id),cost,product_category,product_name,product_brand,product_retail_price
+,product_department,name from inv_distribution_center;
